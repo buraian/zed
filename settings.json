@@ -1,0 +1,126 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "ui_font_family": ".ZedSans",
+  "vim": {
+    "toggle_relative_line_numbers": false,
+    "default_mode": "normal"
+  },
+  "search": {
+    "case_sensitive": true
+  },
+  "minimap": {
+    "show": "always"
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show_pinned_tabs_in_separate_row": false,
+    "show_tab_bar_buttons": false
+  },
+  "tabs": {
+    "close_position": "left",
+    "file_icons": true,
+    "git_status": false
+  },
+  "terminal": {
+    "dock": "right"
+  },
+  "project_panel": {
+    "button": true,
+    "sort_mode": "directories_first",
+    "indent_guides": {
+      "show": "always"
+    },
+    "entry_spacing": "standard"
+  },
+  "selection_highlight": true,
+  "language_models": {
+    "openai_compatible": {
+      "Z.ai": {
+        "api_url": "https://api.z.ai/api/coding/paas/v4",
+        "available_models": [
+          {
+            "name": "glm-4.7",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true
+            }
+          },
+          {
+            "name": "glm-4.6",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true
+            }
+          },
+          {
+            "name": "glm-4.5",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true
+            }
+          },
+          {
+            "name": "glm-4.5-Air",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true
+            }
+          }
+        ]
+      }
+    }
+  },
+  "current_line_highlight": "gutter",
+  "agent_ui_font_size": 16.0,
+  "buffer_line_height": "comfortable",
+  "buffer_font_family": "CamingoCode",
+  "icon_theme": "Monospace Icon Theme - Dark",
+  "agent": {
+    "default_model": {
+      "provider": "Z.ai",
+      "model": "glm-4.7"
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "vim_mode": true,
+  "base_keymap": "SublimeText",
+  "ui_font_size": 16,
+  "buffer_font_size": 15.0,
+  "theme": {
+    "mode": "dark",
+    "light": "Ayu Light",
+    "dark": "Monokai Pro (CE)",
+  },
+}

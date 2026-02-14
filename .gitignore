@@ -1,0 +1,15 @@
+# Zed-specific
+cache/
+sessions/
+logs/
+conversations/
+prompts/
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Generated
+index.*
+tags
+*.log
