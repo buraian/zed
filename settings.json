@@ -7,6 +7,47 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "title_bar": {
+    "show_project_items": true,
+    "show_branch_icon": true
+  },
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+  "scrollbar": {
+    "axes": {
+      "vertical": false
+    },
+    "show": "system"
+  },
+  "agent_servers": {},
+  "format_on_save": "off",
+  "file_finder": {
+    "file_icons": true
+  },
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        }
+      },
+      "enable_lsp_tasks": true
+    }
+  },
+  "git_panel": {
+    "tree_view": false
+  },
+  "prettier": {
+    "allowed": true
+  },
   "ui_font_family": ".ZedSans",
   "vim": {
     "toggle_relative_line_numbers": false,
@@ -26,12 +67,18 @@
   "tabs": {
     "close_position": "left",
     "file_icons": true,
-    "git_status": false
+    "git_status": true
   },
   "terminal": {
     "dock": "right"
   },
   "project_panel": {
+    "scrollbar": {
+      "show": "never"
+    },
+    "bold_folder_labels": true,
+    "auto_reveal_entries": false,
+    "git_status": true,
     "button": true,
     "sort_mode": "directories_first",
     "indent_guides": {
@@ -47,9 +94,8 @@
         "available_models": [
           {
             "name": "glm-4.7",
-            "max_tokens": 200000,
-            "max_output_tokens": 32000,
-            "max_completion_tokens": 200000,
+            "max_tokens": 131072,
+            "max_output_tokens": 131072,
             "capabilities": {
               "tools": true,
               "images": false,
@@ -60,9 +106,8 @@
           },
           {
             "name": "glm-4.6",
-            "max_tokens": 200000,
-            "max_output_tokens": 32000,
-            "max_completion_tokens": 200000,
+            "max_tokens": 131072,
+            "max_output_tokens": 131072,
             "capabilities": {
               "tools": true,
               "images": false,
@@ -73,9 +118,7 @@
           },
           {
             "name": "glm-4.5",
-            "max_tokens": 200000,
-            "max_output_tokens": 32000,
-            "max_completion_tokens": 200000,
+            "max_tokens": 4096,
             "capabilities": {
               "tools": true,
               "images": false,
@@ -86,9 +129,23 @@
           },
           {
             "name": "glm-4.5-Air",
-            "max_tokens": 200000,
-            "max_output_tokens": 32000,
-            "max_completion_tokens": 200000,
+            "max_tokens": 4096,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true
+            }
+          }
+        ]
+      },
+      "LM Studio": {
+        "api_url": "http://localhost:1234/v1",
+        "available_models": [
+          {
+            "name": "mistralai/devstral-small-2-2512",
+            "max_tokens": 32768,
             "capabilities": {
               "tools": true,
               "images": false,
@@ -107,20 +164,21 @@
   "buffer_font_family": "CamingoCode",
   "icon_theme": "Monospace Icon Theme - Dark",
   "agent": {
+    "default_profile": "write",
     "default_model": {
-      "provider": "Z.ai",
-      "model": "glm-4.7"
+      "provider": "ollama",
+      "model": "llama3:8b"
     },
     "favorite_models": [],
     "model_parameters": []
   },
   "vim_mode": true,
-  "base_keymap": "SublimeText",
-  "ui_font_size": 16,
+  "base_keymap": "Emacs",
+  "ui_font_size": 16.0,
   "buffer_font_size": 15.0,
   "theme": {
     "mode": "dark",
     "light": "Ayu Light",
-    "dark": "Monokai Pro (CE)",
+    "dark": "Monokai Pro (CE)"
   },
 }
